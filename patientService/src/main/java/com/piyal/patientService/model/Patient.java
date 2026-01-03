@@ -14,7 +14,7 @@ import java.util.UUID;
 public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+    private Long id;
 
     @NotNull
     private String name;
@@ -28,8 +28,8 @@ public class Patient {
     private String address;
 
     @NotNull
-    private LocalDate dateOfBirth;
+    private LocalDate date_of_birth;
 
     @NotNull
-    private LocalDate registrationDate;
+    private LocalDate registration_date;
 }
