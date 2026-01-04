@@ -22,7 +22,7 @@ WHERE NOT EXISTS (SELECT 1
                   WHERE id = '1');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '123e4567-e89b-12d3-a456-426614174001',
+SELECT '2',
        'Jane Smith',
        'jane.smith@example.com',
        '456 Elm St, Shelbyville',
@@ -30,10 +30,10 @@ SELECT '123e4567-e89b-12d3-a456-426614174001',
        '2023-12-01'
 WHERE NOT EXISTS (SELECT 1
                   FROM patient
-                  WHERE id = '123e4567-e89b-12d3-a456-426614174001');
+                  WHERE id = '2');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '123e4567-e89b-12d3-a456-426614174002',
+SELECT '3',
        'Alice Johnson',
        'alice.johnson@example.com',
        '789 Oak St, Capital City',
@@ -41,10 +41,10 @@ SELECT '123e4567-e89b-12d3-a456-426614174002',
        '2022-06-20'
 WHERE NOT EXISTS (SELECT 1
                   FROM patient
-                  WHERE id = '123e4567-e89b-12d3-a456-426614174002');
+                  WHERE id = '3');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '123e4567-e89b-12d3-a456-426614174003',
+SELECT '4',
        'Bob Brown',
        'bob.brown@example.com',
        '321 Pine St, Springfield',
@@ -52,10 +52,10 @@ SELECT '123e4567-e89b-12d3-a456-426614174003',
        '2023-05-14'
 WHERE NOT EXISTS (SELECT 1
                   FROM patient
-                  WHERE id = '123e4567-e89b-12d3-a456-426614174003');
+                  WHERE id = '4');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '123e4567-e89b-12d3-a456-426614174004',
+SELECT '5',
        'Emily Davis',
        'emily.davis@example.com',
        '654 Maple St, Shelbyville',
@@ -63,95 +63,95 @@ SELECT '123e4567-e89b-12d3-a456-426614174004',
        '2024-03-01'
 WHERE NOT EXISTS (SELECT 1
                   FROM patient
-                  WHERE id = '123e4567-e89b-12d3-a456-426614174004');
+                  WHERE id = '5');
 
 -- Insert well-known UUIDs for specific patients
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '223e4567-e89b-12d3-a456-426614174005',
+SELECT '6',
        'Michael Green',
        'michael.green@example.com',
        '987 Cedar St, Springfield',
        '1988-07-25',
        '2024-02-15'
-WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174005');
+WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '6');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '223e4567-e89b-12d3-a456-426614174006',
+SELECT '7',
        'Sarah Taylor',
        'sarah.taylor@example.com',
        '123 Birch St, Shelbyville',
        '1992-04-18',
        '2023-08-25'
-WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174006');
+WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '7');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '223e4567-e89b-12d3-a456-426614174007',
+SELECT '8',
        'David Wilson',
        'david.wilson@example.com',
        '456 Ash St, Capital City',
        '1975-01-11',
        '2022-10-10'
-WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174007');
+WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '8');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '223e4567-e89b-12d3-a456-426614174008',
+SELECT '9',
        'Laura White',
        'laura.white@example.com',
        '789 Palm St, Springfield',
        '1989-09-02',
        '2024-04-20'
-WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174008');
+WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '9');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '223e4567-e89b-12d3-a456-426614174009',
+SELECT '10',
        'James Harris',
        'james.harris@example.com',
        '321 Cherry St, Shelbyville',
        '1993-11-15',
        '2023-06-30'
-WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174009');
+WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '10');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '223e4567-e89b-12d3-a456-426614174010',
+SELECT '11',
        'Emma Moore',
        'emma.moore@example.com',
        '654 Spruce St, Capital City',
        '1980-08-09',
        '2023-01-22'
-WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174010');
+WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '11');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '223e4567-e89b-12d3-a456-426614174011',
+SELECT '12',
        'Ethan Martinez',
        'ethan.martinez@example.com',
        '987 Redwood St, Springfield',
        '1984-05-03',
        '2024-05-12'
-WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174011');
+WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '12');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '223e4567-e89b-12d3-a456-426614174012',
+SELECT '13',
        'Sophia Clark',
        'sophia.clark@example.com',
        '123 Hickory St, Shelbyville',
        '1991-12-25',
        '2022-11-11'
-WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174012');
+WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '13');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '223e4567-e89b-12d3-a456-426614174013',
+SELECT '14',
        'Daniel Lewis',
        'daniel.lewis@example.com',
        '456 Cypress St, Capital City',
        '1976-06-08',
        '2023-09-19'
-WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174013');
+WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '14');
 
 INSERT INTO patient (id, name, email, address, date_of_birth, registration_date)
-SELECT '223e4567-e89b-12d3-a456-426614174014',
+SELECT '15',
        'Isabella Walker',
        'isabella.walker@example.com',
        '789 Willow St, Springfield',
        '1987-10-17',
        '2024-03-29'
-WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '223e4567-e89b-12d3-a456-426614174014');
+WHERE NOT EXISTS (SELECT 1 FROM patient WHERE id = '15');
